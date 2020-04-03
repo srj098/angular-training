@@ -1,0 +1,46 @@
+What is Angular CLI ?
+
+Bootstrap process of application ?
+
+What is module ?
+
+Binding ?
+   componet to view
+      interpolation
+      property
+
+   view to component
+      Event
+
+      Two way data binding
+
+
+Decorators ? 
+     property - @Input , @Output, @HostBinding
+     Method - @HostListener
+     Class - @component, @NgModule, @Directive,@Pipe
+     Parameter - @Inject
+
+What is directives ?
+       component
+             Component Interaction
+             Content projection
+             what is <ng-content>
+       Structural
+           what is <ng-template>
+          *ngIf ,*ngFor ,*ngIf else then   
+       Attribute                                ngSwitch
+          ngClass, ngStyle, ngSwitch
+
+
+Services ?
+
+Pipes ?
+
+Routings ?
+    <router-outlet>
+
+
+
+
+
