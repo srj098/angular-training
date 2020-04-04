@@ -28,7 +28,9 @@ What is directives ?
              what is <ng-content>
        Structural
            what is <ng-template>
-          *ngIf ,*ngFor ,*ngIf else then   
+          *ngIf ,*ngFor ,*ngIf else then 
+           <ng-template>
+           <ng-container>  
        Attribute                                ngSwitch
           ngClass, ngStyle, ngSwitch
 
