@@ -1,0 +1,28 @@
+npm install -g @angular/cli
+
+create an angular app using angular cli
+----------------------------------------
+
+ng new application name
+
+
+Run the application
+-------------------
+ng serve   you should launch manually in browser http://localhost:4200
+ng serve --open it will directly open into browser
+
+
+data binding
+-------------
+one way data binding 
+
+Interpolation - component to view - {{}}
+property binding - component to view - []
+event binding -  view to component - ()
+
+two way data binding
+component to view and view to component
+
+ngModel - it is useful for two way data binding to bind the data we useful
+            [(ngModel)] = ""
+          

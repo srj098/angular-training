@@ -1,11 +1,41 @@
-<h1>Hello</h1>
+<!--data binding techniques -->
 
-<h1>{{name}}</h1>
+<!-- interpolation -->
+<h1 style="text-align: center;">{{title}}</h1>
 
+<!--Property binding: bind the data(coming from component) into the property of the element ex: button having disabled
+property ,h1 and p element having innerHTML property, img having src property -->
 <h1 [innerHTML]="innerHTMLValue"></h1>
+<p [innerHTML]="paragraph"></p>
+<button [disabled]="disable">Click ME</button><br><br>
+<img [src]="imageSrc" height="300">
 
-<p></p>
+<!--event binding: bind the data coming from the component into the event of any element -->
+<button [disabled]="disable" (click)="clickMe()">Click Button</button><br><br>
 
-<button (click)="clickMe()" [disabled]="disable">Click ME</button>
+<select (change)="onChange($event)">
+  <option>RED</option>
+  <option>Green</option>
+  <option>Yellow</option>
+</select>
 
-<img src>
+<h1>{{Color}}</h1>
+
+<!--Tow way data binding -->
+
+<!--Tow way data binding: using ngModel -->
+<input type="text" [(ngModel)]="inputBinding">
+
+<!--Tow way data binding:without using ngModel -->
+<input [value]="inputBinding" (input)="inputBinding=$event.target.value">
+
+<h1>{{inputBinding}}</h1>
+
+
+
+
+
+
+
+
+
