@@ -1,3 +1,12 @@
-<h1>{{binding}}</h1> <!--header can have values for h1 to h6, Interpolation data binding-->
-<a [href]="htmllink">HTML Learning</a> <!-- a tag is for link, Property binding, href property--><br>
-<img [src]="Imagelink" [alt]="alttext" width="50" height="50"> <!-- img tag is for image, src|alt|width|height are properties-->
+<img [src]="Logo" [alt]="alttext" width="100" height="100"> <!-- img tag is for image, src|alt|width|height are properties-->
+<h1 id="heading" class="head" align="center">{{binding}}</h1> <!--header can have values for h1 to h6, Interpolation data binding-->
+ <!-- a tag is for link, Property binding, href property--><br>
+<form> <!--<form> element defines a form that is used to collect user input-->
+    <label [style]="size1"><b>First Name:</b></label>
+    <input [(ngModel)]="fname"><br>
+    <label [style]="size1"><b>Last Name:</b></label>
+    <input [value]="lname" (input)="lname=$event.target.value"><br>
+    <button (click)='onSubmit()'>Submit</button><!-- Property binding-->
+    <p>{{fname}} {{lname}}<p>
+</form>
+<footer><a [href]="htmllink">NCR Global</a></footer>
