@@ -1,3 +1,6 @@
+Day-1
+-------
+
 npm install -g @angular/cli
 
 create an angular app using angular cli
@@ -11,6 +14,8 @@ Run the application
 ng serve   you should launch manually in browser http://localhost:4200
 ng serve --open it will directly open into browser
 
+Day--2
+----------
 
 data binding
 -------------
@@ -26,3 +31,18 @@ component to view and view to component
 ngModel - it is useful for two way data binding to bind the data we useful
             [(ngModel)] = ""
           
+Day-3
+-------
+Module- It having @NgModule decorator which provide the metadata for the Module
+
+Declarations:[]- it contains components, pipes, directives
+Imports:[]- it contains the other modules, feature modules
+Providers:[]- it contains the services
+bootstrap:[]- it having the information of the component which you want to bootstrap
+
+Bootstrap process of the application
+-------------------------------------
+1. main.ts file bootstrap the app modules
+2. module will bootstrap the app component
+3. component having the selector and index.html will use the selector and load the component
+4. finally component template will load and it will display on the browser
