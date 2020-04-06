@@ -1,6 +1,6 @@
 What is Angular CLI 
 
-Bootstrap process of application ?
+Bootstrap process of application 
 
 What is module ?
 
