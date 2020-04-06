@@ -46,3 +46,52 @@ Bootstrap process of the application
 2. module will bootstrap the app component
 3. component having the selector and index.html will use the selector and load the component
 4. finally component template will load and it will display on the browser
+
+Day:4
+-------
+create a module
+------------------
+
+ng generate module module-name  or ng g m module-name  - it will create a module in a folder but if you dont want to create module 
+in folder then use --flat flag
+ex: ng g m module-name --flag
+
+create a module with routing file(routing module)
+--------------------------------------------------
+
+ng g m module-name --routing --flat 
+
+create a component
+-------------------
+ng g c component-name - it will create 4 files and update the module as well
+
+1. code file (.ts)
+2. html file
+3. CSS file
+4. Unit testing file (.spec.ts)
+
+if you dont want to create spec or test file then use --skipTests flag
+
+create a service
+-----------------
+ng g s service-name --flat --skipTests
+
+craete a directives
+---------------------
+ng g d directive-name
+
+carete a pipe
+--------------
+
+
+
+
+
+
+
+
+
+
+
+
+

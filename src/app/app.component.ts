@@ -9,6 +9,8 @@ export class AppComponent {
 
   title: string = 'Angular-Demo';
 
+  showHeader:boolean =false;
+
 
   innerHTMLValue: string = 'bind into heading';
   paragraph: string = "bind into paragraph";
@@ -23,9 +25,9 @@ export class AppComponent {
     this.count++;
     alert(this.count);
     if (this.count == 3) {
+      this.showHeader =true;
       this.disable = true;
     }
-
   }
 
   Color: string;

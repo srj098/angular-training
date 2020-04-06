@@ -1,7 +1,8 @@
+<body>
 <!--data binding techniques -->
 
 <!-- interpolation -->
-<h1 style="text-align: center;">{{title}}</h1>
+<h1 *ngIf="true" style="text-align: center;">{{title | lowercase }}</h1>
 
 <!--Property binding: bind the data(coming from component) into the property of the element ex: button having disabled
 property ,h1 and p element having innerHTML property, img having src property -->
@@ -24,13 +25,19 @@ property ,h1 and p element having innerHTML property, img having src property --
 <!--Tow way data binding -->
 
 <!--Tow way data binding: using ngModel -->
-<input type="text" [(ngModel)]="inputBinding">
+
 
 <!--Tow way data binding:without using ngModel -->
 <input [value]="inputBinding" (input)="inputBinding=$event.target.value">
 
-<h1>{{inputBinding}}</h1>
 
+<!--if you are using ngModel for two way data binding and you are using ngModel in the form then it will not work unitl you
+set the name property -->
+<form>
+  <input type="text" name="name" [(ngModel)]="inputBinding">
+  <h1>{{inputBinding}}</h1>
+</form>
+</body>
 
 
 
