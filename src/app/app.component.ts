@@ -39,3 +39,5 @@ export class AppComponent {
   inputBinding: string = "Hello"
 
 }
+
+

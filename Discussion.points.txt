@@ -14,13 +14,6 @@ Binding ?
 
       Two way data binding
 
-
-Decorators ? 
-     property - @Input , @Output, @HostBinding
-     Method - @HostListener
-     Class - @component, @NgModule, @Directive,@Pipe
-     Parameter - @Inject
-
 What is directives ?
        component
              Component Interaction
@@ -31,6 +24,12 @@ What is directives ?
           *ngIf ,*ngFor ,*ngIf else then   
        Attribute                                ngSwitch
           ngClass, ngStyle, ngSwitch
+
+Decorators ? 
+     property - @Input , @Output, @HostBinding
+     Method - @HostListener
+     Class - @component, @NgModule, @Directive,@Pipe
+     Parameter - @Inject
 
 
 Services ?

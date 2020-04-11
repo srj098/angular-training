@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class UpperPipe implements PipeTransform {
 
-  transform(value: any, ...args: any[]): any {
+  transform(value: string): string {
+    value.substr(0,2);
     return null;
   }
 

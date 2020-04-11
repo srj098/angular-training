@@ -14,6 +14,9 @@ Run the application
 ng serve   you should launch manually in browser http://localhost:4200
 ng serve --open it will directly open into browser
 
+
+
+
 Day--2
 ----------
 
@@ -30,7 +33,10 @@ component to view and view to component
 
 ngModel - it is useful for two way data binding to bind the data we useful
             [(ngModel)] = ""
-          
+
+
+
+
 Day-3
 -------
 Module- It having @NgModule decorator which provide the metadata for the Module
@@ -46,6 +52,10 @@ Bootstrap process of the application
 2. module will bootstrap the app component
 3. component having the selector and index.html will use the selector and load the component
 4. finally component template will load and it will display on the browser
+
+
+
+
 
 Day:4
 -------
@@ -82,6 +92,55 @@ ng g d directive-name
 
 carete a pipe
 --------------
+ng g p pipe-name
+
+
+
+
+
+
+
+Day:5
+------
+directives
+------------
+All the directive will useful for the template 
+
+we have 3 types of directive in angular
+
+1. component - component is a class having component decorator (@Component)
+               you can use the component in any template using the component selector
+               compoennt is a directive which having template also, you can apply this directive in the template using the 
+               selector 
+               ex: if the selector is app-root then in template it will be <app-root></app-root>
+
+2. Structural
+3. Attribute
+
+
+Day: 6
+------
+component - component is a class whcih is decorated with the @Component() decorator whcih provide the metadata of the component.
+
+@Component({
+    selector
+})
+
+Day: 7
+
+how to create compoennt and module from scratch ?
+
+Component interaction - pass the data from one component to another component
+1. using @Input() decorator - pass the data from parent component to child component , we are binding the data which is coming
+   from parent component to the property of the child component
+   
+2. using @Output() decorator
+3. using @ViewChild()
+4. using services
+
+
+
+
 
 
 

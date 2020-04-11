@@ -2,7 +2,7 @@
 <!--data binding techniques -->
 
 <!-- interpolation -->
-<h1 *ngIf="true" style="text-align: center;">{{title | lowercase }}</h1>
+<h1 *ngIf="true" elementStyle style="text-align: center;">{{title | upper }}</h1>
 
 <!--Property binding: bind the data(coming from component) into the property of the element ex: button having disabled
 property ,h1 and p element having innerHTML property, img having src property -->
@@ -22,6 +22,7 @@ property ,h1 and p element having innerHTML property, img having src property --
 
 <h1>{{Color}}</h1>
 
+
 <!--Tow way data binding -->
 
 <!--Tow way data binding: using ngModel -->
@@ -37,6 +38,11 @@ set the name property -->
   <input type="text" name="name" [(ngModel)]="inputBinding">
   <h1>{{inputBinding}}</h1>
 </form>
+
+
+<app-employee></app-employee>
+
+ 
 </body>
 
 
