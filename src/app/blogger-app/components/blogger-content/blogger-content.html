@@ -1,11 +1,12 @@
 
-<blogger-header [header]="bloggerTitle"></blogger-header>
+<blogger-header (content)="getData($event)" [headerExtra]="blogger" [header]="bloggerTitle"></blogger-header>
 
 <h1>Blogger Content</h1>
 <ul>
     <li>Poems</li>
     <li>Stories</li>
     <li>Random content</li>
+    <li *ngIf="extraContent">{{extraContent}}</li>
 </ul>
 
 <blogger-footer></blogger-footer>

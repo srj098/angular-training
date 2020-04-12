@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
    styleUrls:['./blogger-content.css'] 
 })
 export class BloggerContentComponent {
- bloggerTitle:string = 'Welcome to My Blog'
+   
+ bloggerTitle:string = 'Welcome to My Blog '
+
+ headerDetail:string = 'My blog contains stories, poems';
+
+ blogger:object = {bloggerOwner:'Suraj',headerDetails:'My blog contains stories, poems'};
+
+ extraContent:string;
+
+ getData($event){
+   this.extraContent = $event;
+ }
+
 }

@@ -138,6 +138,25 @@ Component interaction - pass the data from one component to another component
 3. using @ViewChild()
 4. using services
 
+Day:8
+
+@Output - this decorator is useful to emit the data from child compoenent to parent
+
+child component will fire one event with the data , for firing the event it will use EventEmmiter
+
+Child compoennt will craete the instance of EventEmmiter using new Operator
+
+        @Output() content = new EventEmitter<string>();
+ 
+After careting the instance and event then it will fire the data using emit method
+
+         this.content.emit(this.contentData);
+
+To accept the data from child component parent componnt will bind the event of the child component and get the data using 
+$event
+
+
+
 
 
 

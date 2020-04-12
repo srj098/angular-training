@@ -1,12 +1,33 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-selector:'blogger-header',
-templateUrl:'./blogger-header.html',
-styleUrls:[]
+    selector: 'blogger-header',
+    templateUrl: './blogger-header.html',
+    styleUrls: []
 })
 export class BloggerHeaderComponent {
 
-@Input() header:string;
+    count: number = 0;
+
+    @Input() header: string;
+
+    @Input('headerExtra') headerContentDetails: string;
+
+    contentData: string = 'Quotes';
+
+    @Output() content = new EventEmitter<string>();
+
+    sendData() {
+        this.content.emit(this.contentData);
+    }
+
+    increaseCount() {
+        this.count++;
+    }
+
+    decreaseCount() {
+        this.count--;
+    }
+
 
 }

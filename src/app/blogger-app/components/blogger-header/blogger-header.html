@@ -1,1 +1,9 @@
 <h1>My Blogger heading is {{header}}</h1>
+<h1>Blogger Owner is : {{headerContentDetails.bloggerOwner}}</h1>
+<p>{{headerContentDetails.headerDetails}}</p>
+
+<button (click)="sendData()">Send Data</button><br>
+
+<button (click)="increaseCount()">Increase Count</button>
+<button (click)="decreaseCount()">Decrease Count</button>
+<h1>{{count}}</h1>
