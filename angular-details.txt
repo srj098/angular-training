@@ -1,6 +1,6 @@
 npm install -g @angular/cli
 
-create an angular app using angular cli
+create an angular app using angular    CLI
 ----------------------------------------
 
 ng new application name
