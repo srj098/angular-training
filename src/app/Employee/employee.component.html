@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <td>First Name</td>
+        <td>{{FirstName}}</td>
+    </tr>
+    <tr>
+        <td>Second Name</td>
+        <td>{{SecondName}}</td>
+    </tr>
+    <tr *ngIf='ShowDetails'>
+        <td>Gender</td>
+        <td>{{Gender}}</td>
+    </tr>
+</table>
+<button (click)='toggleDetails()'>
+    {{ShowDetails? 'Hide':'Show'}} Details
+</button>
+<employeeName-comp [Name]='FirstName'></employeeName-comp>
