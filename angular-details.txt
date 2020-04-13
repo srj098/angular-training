@@ -1,9 +1,12 @@
+Day-1
+-------
+
 npm install -g @angular/cli
 
 create an angular app using angular cli
 ----------------------------------------
 
-ng new applicatio-name
+ng new application name
 
 
 Run the application
@@ -11,6 +14,8 @@ Run the application
 ng serve   you should launch manually in browser http://localhost:4200
 ng serve --open it will directly open into browser
 
+Day--2
+----------
 
 data binding
 -------------
@@ -26,3 +31,67 @@ component to view and view to component
 ngModel - it is useful for two way data binding to bind the data we useful
             [(ngModel)] = ""
           
+Day-3
+-------
+Module- It having @NgModule decorator which provide the metadata for the Module
+
+Declarations:[]- it contains components, pipes, directives
+Imports:[]- it contains the other modules, feature modules
+Providers:[]- it contains the services
+bootstrap:[]- it having the information of the component which you want to bootstrap
+
+Bootstrap process of the application
+-------------------------------------
+1. main.ts file bootstrap the app modules
+2. module will bootstrap the app component
+3. component having the selector and index.html will use the selector and load the component
+4. finally component template will load and it will display on the browser
+
+Day:4
+-------
+create a module
+------------------
+
+ng generate module module-name  or ng g m module-name  - it will create a module in a folder but if you dont want to create module 
+in folder then use --flat flag
+ex: ng g m module-name --flag
+
+create a module with routing file(routing module)
+--------------------------------------------------
+
+ng g m module-name --routing --flat 
+
+create a component
+-------------------
+ng g c component-name - it will create 4 files and update the module as well
+
+1. code file (.ts)
+2. html file
+3. CSS file
+4. Unit testing file (.spec.ts)
+
+if you dont want to create spec or test file then use --skipTests flag
+
+create a service
+-----------------
+ng g s service-name --flat --skipTests
+
+craete a directives
+---------------------
+ng g d directive-name
+
+carete a pipe
+--------------
+
+
+
+
+
+
+
+
+
+
+
+
+

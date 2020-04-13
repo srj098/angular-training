@@ -1,0 +1,34 @@
+Component:
+A component in Agular is a class with a template and decorator.(ex. app.component.ts see this file while reading)
+  Class: Root class in Angular is always AppComponent. All the logic will be inside this.it should have export keyword as prefix so that it can used outside of this component by importing it.
+  Decorator:Addes Metadeta to class.To add decorator we use @ symbol.
+
+  // Component decorator is provided by the Angular core library, so we
+// have to import it before using it,Any exported member can be imported using import keyowrd.
+import { Component } from '@angular/core';
+
+// The class is decorated with Component decorator which adds metadata to the class. 
+// We use the @ symbol to apply a decorator to the class
+@Component({
+    // component has several properties. the full list of properties refer to the following URL
+    // https://angular.io/docs/ts/latest/api/core/index/Component-decorator.html
+    // To use this component on any HTML page we specify the selector
+    // This selector becomes the directive on the HTML page
+    // At run time, the directive is replaced by the template
+    // HTML specified below
+    selector: 'app-root',
+    // The template contains the HTML to render.
+    template:'./app.component.html',
+})
+// export keyword allows this class to be exported, so other components 
+// in the application can import and use it if required
+export class AppComponent {
+    // name is a property and the data type is string and
+    // has a default value "angular"
+    name: string = 'Angular';
+}
+
+Notice in the index.html page, we have used the AppComponent using the directive app-root . At runtime <app-root> directive is replaced with the HTML we specified using the selector property in the component decorator.
+
+
+Document Object Model(DOM): DOM contains the HTML elements as objects, their properties, methods and events and it is a standard for accessing, modifying, adding or deleting HTML elements.

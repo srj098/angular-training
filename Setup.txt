@@ -1,0 +1,30 @@
+1. Download and install nodejs
+ https://nodejs.org/en/ (npm is installed with Node.js)
+        Node JS: Node.js is an open source server environment. Node.js allows you to run JavaScript on the server.
+         Node.js runs single-threaded, non-blocking, asynchronously programming, which is very memory efficient.
+
+        NMP:npm is the world's largest Software Library (Registry). npm is also a software Package Manager and Installer.The registry contains over 800,000 code packages.
+        Open-source developers use npm to share software.
+
+2. check if node and npm got installed
+open cmd and type
+1. node -v
+2. npm -v
+
+3. Install angular cli
+   open cmd and run this command
+
+   npm install -g @angular/cli
+
+   check if cli got installed
+   open cmd
+   ng v
+npm includes a CLI (Command Line Client) that can be used to download and install software
+
+
+To have node_modules 
+open command prompt 
+npm install
+
+Command to start browser applicatio:
+ng serve --open

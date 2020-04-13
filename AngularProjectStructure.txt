@@ -1,0 +1,48 @@
+package.json: Contains Packages which are required to build and run our application. This json Contains.
+   dependencies: required to run Angular application.
+   Devdependencies: required to develop Angular application. (they are not required on production server)
+   Scripts: custom scripts
+
+node_module folder:
+   These dependencies and Devdependencies are installed in node_modules folder by nmp package manger
+    command: npm installed
+
+e2e folder:
+    Contains end to end test cases and their configuration files.
+
+.editorconfig file:
+   Configuration file for Visual studio code.
+
+.gitignore file:
+  files and folders listed in this files are ignored when change set is checked in into the source control.
+
+Karma.conf.js:
+Configuration file for Karama(unti test runner) 
+
+README.md:
+List basic commands and their information.
+
+tsconfig.json:
+Typescript compiler configuration file.
+
+tslint.json:
+configuration file for linting. it checks our typescript code for error
+
+SRC******(very important):
+This folder contains Angular project source code.This folder contains:
+   1. assets folder: this folder contains application assets like images.
+   2. environments folder: Contains Dev and production environment files.
+   3. favicon: This file contains favorite icon for your application.
+   4. index.html: main html page which is served to user .
+   5. main.ts: Main entry point for the application. This file contains code to bootstrap the application root module.
+   6. polyfills:Contains polyfills needed by angular. (related to browsers supproted by application)
+   7. styles.css: global styles for application.
+   8. test.ts: Main entry point for unit test.
+
+   9. app component****(Very imp):the root component(AppComponent)This has four files 
+      Type script(app.component.ts)
+      HTML file
+      template 
+      stylesheet 
+      Spec files.
+      app.module.ts: this is the root module.
