@@ -11,8 +11,13 @@
         <td>Gender</td>
         <td>{{Gender}}</td>
     </tr>
+    <tr *ngIf='myOrg'>
+        <td>Organization</td>
+        <td>{{myOrg}}</td>
+    </tr>
+
 </table>
 <button (click)='toggleDetails()'>
     {{ShowDetails? 'Hide':'Show'}} Details
 </button>
-<employeeName-comp [Name]='FirstName'></employeeName-comp>
+<employeeName-comp [Name]='FirstName' (OrgEvent)="getOrg($event)" ></employeeName-comp>

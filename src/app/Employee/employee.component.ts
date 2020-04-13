@@ -13,5 +13,9 @@ export class EmployeeCompoment{
 toggleDetails(){
     this.ShowDetails=!this.ShowDetails;
 }
+myOrg:string;
+getOrg($event){
+this.myOrg = $event;
+}
 
 }
