@@ -1,4 +1,5 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
+import { IfStmt } from '@angular/compiler';
 
 @Component({
     selector:'employeeName-comp',
@@ -14,6 +15,19 @@ Org:string ='NCR';
 
 sendOrg(){
     this.OrgEvent.emit(this.Org);
+}
+
+Count:number=0;
+
+IncreaseCount(){
+    this.Count++;
+}
+
+DecreaseCount(){
+    if(this.Count>=1)
+    {
+    this.Count--;
+    }   
 }
 
 }
