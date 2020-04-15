@@ -23,11 +23,15 @@ IncreaseCount(){
     this.Count++;
 }
 
+buttonDisabled:boolean=false;
+
 DecreaseCount(){
     if(this.Count>=1)
     {
     this.Count--;
-    }   
+    } 
+    else{this.buttonDisabled=!this.buttonDisabled;}   
+    
 }
 
 }
