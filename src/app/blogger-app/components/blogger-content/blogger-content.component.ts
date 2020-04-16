@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , OnInit  } from '@angular/core';
 import { BloggerDetails } from '../../services/blogger-details.service';
 
 @Component({
@@ -6,12 +6,19 @@ import { BloggerDetails } from '../../services/blogger-details.service';
   templateUrl: './blogger-content.html',
   styleUrls: ['./blogger-content.css']
 })
-export class BloggerContentComponent {
+export class BloggerContentComponent implements OnInit{
+
+  storyName:string = 'College ke din';
+
+  ngOnInit(){
+    this.bloggerDetails.setStoryName(this.storyName);
+  }
+
 
 
   constructor(private bloggerDetails: BloggerDetails) { }
 
-  application: string = this.bloggerDetails.applicationName;
+  
 
 
   bloggerTitle: string = 'Welcome to My Blog '

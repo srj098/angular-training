@@ -1,11 +1,20 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter,OnInit } from '@angular/core';
+import { BloggerDetails } from '../../services/blogger-details.service';
 
 @Component({
     selector: 'blogger-header',
     templateUrl: './blogger-header.html',
     styleUrls: []
 })
-export class BloggerHeaderComponent {
+export class BloggerHeaderComponent implements OnInit {
+
+    constructor(private blogger:BloggerDetails){}
+
+    story:string;
+
+    ngOnInit(){
+     this.story = this.blogger.getStoryName();
+    }
 
     count: number = 0;
 

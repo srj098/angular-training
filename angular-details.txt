@@ -164,9 +164,26 @@ and methods of that element.
 
 The scope of this variable in only that template.
 
+Day :10
+
 component interaction using service
 ------------------------------------
 
+Service is a class decorated with the @Injectable() decorator it is useful to proivde the reusability and using service we can pass
+the data from on component to another component using DI (dependency injection) .
+
+DI 
+----
+in three ways we can inject the service
+
+service - in service we can define the availability of the service using providedIn property in Injectable decorator
+        ex: @Injectable({
+            providedIn:'root'
+        }) 
+
+Module -
+
+Compoennt -
 
 
 
