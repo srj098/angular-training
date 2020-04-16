@@ -155,6 +155,18 @@ After careting the instance and event then it will fire the data using emit meth
 To accept the data from child component parent componnt will bind the event of the child component and get the data using 
 $event
 
+Day:9
+------
+
+Template Reference variable - using # 
+if you are using this variable in any html element or compoennt ,then using this variable you can access all the properties
+and methods of that element.
+
+The scope of this variable in only that template.
+
+component interaction using service
+------------------------------------
+
 
 
 

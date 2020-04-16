@@ -1,5 +1,7 @@
+<h1>{{application}}</h1>
 
-<blogger-header (content)="getData($event)" [headerExtra]="blogger" [header]="bloggerTitle"></blogger-header>
+
+<blogger-header (content)="getData($event)" [headerExtra]="blogger" [header]="bloggerTitle" #bloggerComp></blogger-header>
 
 <h1>Blogger Content</h1>
 <ul>
@@ -8,5 +10,11 @@
     <li>Random content</li>
     <li *ngIf="extraContent">{{extraContent}}</li>
 </ul>
+
+<input type="text" #inputVal/>
+
+<button (click)="saveData(inputVal.value)" #btn>Submit</button>
+
+<h1 #heading>{{inputVal.value}}</h1>
 
 <blogger-footer></blogger-footer>

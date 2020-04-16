@@ -7,7 +7,7 @@ import {CompanyModuleModule} from './company/company-module.module';
 import {ElementStyleDirective} from './company/directives/element-style.directive';
 import {EmployeeComponent} from './company/component/employee/employee.component';
 import { UpperPipe } from './company/pipes/upper.pipe';
-import { StudentComponent } from './student/student/student.component';
+
 
 
 @NgModule({
@@ -15,8 +15,7 @@ import { StudentComponent } from './student/student/student.component';
     AppComponent,
     ElementStyleDirective,
     EmployeeComponent,
-    UpperPipe,
-    StudentComponent
+    UpperPipe
   ],
   imports: [
     BrowserModule,
