@@ -4,23 +4,23 @@ import { BloggerDetails } from '../../services/blogger-details.service';
 @Component({
   selector: 'blogger-content',
   templateUrl: './blogger-content.html',
-  styleUrls: ['./blogger-content.css']
+  styleUrls: ['./blogger-content.css'],
+
 })
 export class BloggerContentComponent implements OnInit{
 
-  storyName:string = 'College ke din';
-
-  ngOnInit(){
-    this.bloggerDetails.setStoryName(this.storyName);
-  }
-
-
-
-  constructor(private bloggerDetails: BloggerDetails) { }
-
   
 
-
+  constructor(private bloggerDetails: BloggerDetails) { }
+  storyName:string = 'College ke din';
+  
+  studentsDetails:any;
+  
+  ngOnInit(){
+    this.bloggerDetails.setStoryName(this.storyName);
+    this.studentsDetails = this.bloggerDetails.students;
+  }
+  
   bloggerTitle: string = 'Welcome to My Blog '
 
   headerDetail: string = 'My blog contains stories, poems';

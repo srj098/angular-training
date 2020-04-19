@@ -18,3 +18,13 @@
 <h1 #heading>{{inputVal.value}}</h1>
 
 <blogger-footer></blogger-footer>
+
+
+<h1>Total number of Students: {{studentsDetails.length}}</h1>
+
+<div *ngFor="let student of studentsDetails">
+<h1>{{student.name}}</h1>
+</div>
+
+
+
