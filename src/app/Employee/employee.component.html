@@ -21,3 +21,11 @@
     {{ShowDetails? 'Hide':'Show'}} Details
 </button>
 <employeeName-comp [Name]='FirstName' (OrgEvent)="getOrg($event)" ></employeeName-comp>
+
+<div *ngFor='let employee of employeeDetails'>
+    <h1>{{employee.QID}}</h1>
+    <h1>{{employee.Name}}</h1>
+    <h1>{{employee.Gender}}</h1>
+    <h1>{{employee.annualSalary}}</h1> <br>
+
+</div>
