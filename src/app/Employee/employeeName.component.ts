@@ -21,16 +21,20 @@ Count:number=0;
 
 IncreaseCount(){
     this.Count++;
+    this.buttonDisabled=false;
 }
 
-buttonDisabled:boolean=false;
+buttonDisabled:boolean=true;
 
 DecreaseCount(){
     if(this.Count>=1)
     {
-    this.Count--;
+        this.Count--;
+    if(this.Count==0){
+        this.buttonDisabled=true;
+    }
     } 
-    else{this.buttonDisabled=!this.buttonDisabled;}   
+    else {this.buttonDisabled=!this.buttonDisabled;}   
     
 }
 

@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {EmployeeService} from '../../app/Service/employee.service';
 
 @Component({
     selector:'employee-comp',
@@ -18,4 +19,11 @@ getOrg($event){
 this.myOrg = $event;
 }
 
+employeeDetails:any;
+constructor (private employeeService:EmployeeService){}
+
+ngOnInit(){
+    this.employeeDetails=this.employeeService.employees;
+    
+}
 }
