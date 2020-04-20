@@ -10,6 +10,7 @@ applicationName:string = 'Blogger';
 
 sName:string;
 
+students1 = [new StudentDetail('A'),new StudentDetail('B',2),new StudentDetail('C',3),new StudentDetail('Narayana',4)];
 
 students:StudentsDetail[]= [{
   name:'A',

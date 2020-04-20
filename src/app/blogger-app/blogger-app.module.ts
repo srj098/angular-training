@@ -6,8 +6,6 @@ import { BloggerFooterCompoennt } from './components/blogger-footer/blogger-foot
 import { BloggerDetails } from './services/blogger-details.service';
 
 
-
-
 @NgModule({
     declarations:[BloggerContentComponent,BloggerHeaderComponent,BloggerFooterCompoennt],
     imports:[BrowserModule],
