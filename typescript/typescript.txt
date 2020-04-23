@@ -1,0 +1,35 @@
+ECMA -----
+
+javascript follow ES5 standard - javascript 5
+
+typescript
+----------
+typescript is a superset of javascript. typescript follow ES6 standard
+ES6 == ES2015 
+
+diif between ES5 and ES6
+-------------------------
+ES6 = ES5 + some additional features
+
+diff between javascript and typescript
+---------------------------------------
+Browser understands javascript - we dont use any compiler or translator
+Browser dont understand typescript = we require compiler or translator to compile or transpile typescript to javascript
+
+available compilers
+-------------------
+tsc - typescript compiler
+babel 
+traceur
+
+Browser executes javascript using some engine - excution engine
+IE - 
+Chrome - V8 engine 
+Firefox -
+Edge
+Edge Chromium
+
+
+
+
+

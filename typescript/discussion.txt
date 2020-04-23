@@ -1,0 +1,16 @@
+npm - node packaging manager - it manages the packages or modules in npm server 
+
+npm registry
+-------------
+npm get registry - it will get the registry 
+npm config set registry=http://nexuspro.ncr.com/nexus/content/groups/financial-npm-group/
+
+To fetch the module we will use npm commands
+npm install module-name 
+
+npm will see the package.json file and fetch the modules and it will store the modules in node_modules folder
+
+
+
+
+
