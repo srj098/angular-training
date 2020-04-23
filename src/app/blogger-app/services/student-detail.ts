@@ -8,3 +8,6 @@ export class StudentDetail implements StudentsDetail {
         this.id = sid;
     }
 }
+
+
+
