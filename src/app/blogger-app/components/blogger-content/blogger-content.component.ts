@@ -11,7 +11,9 @@ export class BloggerContentComponent implements OnInit{
 
   
 
-  constructor(private bloggerDetails: BloggerDetails) { }
+  constructor(private bloggerDetails: BloggerDetails) {
+  
+   }
   storyName:string = 'College ke din';
   
   studentsDetails:any;
@@ -19,6 +21,7 @@ export class BloggerContentComponent implements OnInit{
   ngOnInit(){
     this.bloggerDetails.setStoryName(this.storyName);
     this.studentsDetails = this.bloggerDetails.students;
+    this.getElement();
   }
   
   bloggerTitle: string = 'Welcome to My Blog '
@@ -36,5 +39,11 @@ export class BloggerContentComponent implements OnInit{
   saveData(value: string) {
     alert('input value is' + value);
   }
+
+  getElement(){
+    let element:any=document.getElementById('hello');
+    element.innerHTML='Welecome to typescript tutorial'; 
+  }
+
 
 }
