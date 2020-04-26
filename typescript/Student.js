@@ -1,4 +1,3 @@
-"use strict";
 var Student = /** @class */ (function () {
     function Student() {
     }

@@ -42,7 +42,10 @@ export class BloggerContentComponent implements OnInit{
 
   getElement(){
     let element:any=document.getElementById('hello');
-    element.innerHTML='Welecome to typescript tutorial'; 
+    if(element){
+      element.innerHTML='Welecome to typescript tutorial'; 
+    }
+   
   }
 
 
