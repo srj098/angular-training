@@ -1,18 +1,21 @@
-var Student = /** @class */ (function () {
-    function Student() {
-    }
-    Student.prototype.getStudentName = function () {
+"use strict";
+
+const d =5;
+d=10;
+class Student {
+    getStudentName() {
         return 'Narayana';
-    };
-    Student.prototype.getSname = function (studentObj) {
+    }
+    getSname(studentObj) {
         return studentObj.name;
-    };
-    return Student;
-}());
-var instance = new Student();
+    }
+}
+const instance = new Student();
 console.log(instance.getStudentName());
 console.log(typeof '');
+
 function Num(a) {
+    d = 10;
     if (a) {
         console.log('value is ' + a);
     }
@@ -21,5 +24,7 @@ function Num(a) {
     }
 }
 console.log(typeof null);
-var a = function (value) { return 'Hi Suraj ' + value; };
-console.log(a('Tripathi'));
+const a = (value) => `Hello Suraj ${value}`;
+console.log(a('How are you'));
+
+
