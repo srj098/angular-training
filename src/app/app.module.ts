@@ -9,7 +9,6 @@ import {EmployeeComponent} from './company/component/employee/employee.component
 import { UpperPipe } from './company/pipes/upper.pipe';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

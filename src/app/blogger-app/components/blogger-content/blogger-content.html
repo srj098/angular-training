@@ -1,7 +1,9 @@
+<button routerLink="header">header</button>
+<button routerLink="headerBlog">header-blog</button>
+<router-outlet>
+</router-outlet>
 <h1>{{application}}</h1>
 <h1 id="hello1"></h1>
-
-<blogger-header (content)="getData($event)" [headerExtra]="blogger" [header]="bloggerTitle" #bloggerComp></blogger-header>
 
 <h1>Blogger Content</h1>
 <ul>
