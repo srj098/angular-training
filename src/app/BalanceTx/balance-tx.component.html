@@ -1,8 +1,14 @@
-<h1>Welcome to Balance</h1>
-
-<button routerLink="appComponent">Home</button>
+<h1>Balance Transaction</h1>
+<button routerLink="appComponent"style=margin-top:4%;>Home</button>
 <router-outlet>
 </router-outlet>
+<h2>{{availableBalance}}</h2>
+<h4>{{lenghofAccountNumber}}</h4>
+<h3>{{accounttextbox}}</h3>
+<input type="password" [(ngModel)]='accountNumber' (input)="accountValidation()" (clear)="accountClear()">
+<button *ngIf="enableSubmit && !availableBalance" (click)="getBalance()" style="height:50px;width: 100px;margin-top:4%;">Submit</button>
+<button *ngIf="enableClear" (click)="clearBalance()" style="height:50px;width: 100px;">Clear</button>
+
   <!-- <h2 *ngIf="!displayOtherButtons">{{availableBalance}}</h2>
   <h4 *ngIf="!displayOtherButtons">{{lenghofAccountNumber}}</h4>
   <h3 *ngIf="!displayOtherButtons">{{accounttextbox}}</h3>
