@@ -23,6 +23,14 @@ function Num(a) {
         console.log('value is not present');
     }
 }
+
+function getName(){
+  
+}
+
+function getField(){
+  
+}
 console.log(typeof null);
 const a = (value) => `Hello Suraj ${value}`;
 console.log(a('How are you'));
